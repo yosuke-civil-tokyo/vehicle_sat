@@ -18,6 +18,13 @@ To obtain the result from this program, all you need is as follows.
 
 Be aware that we use each raw satellite imagery, not pansharpened(pre-processed) image.
 
+## Environment
+Make environment 'vehicle' by running below. For referrence, requirements.txt contains libraries just for vehicle detection.  
+```
+conda env create -f env.yml  
+conda activate vehicle
+```
+
 ## Process
 1. Prepare data & Train the model
 2. Detect vehicles & Estimate speed
