@@ -67,7 +67,7 @@ python run_newimage.py [your image file name in 'custom_dataset/image']
 ### Detect vehicles and estimate speed  
 Run below.  
 ```
-python main.py -ulx [top left longutude] -uly [top left latitude] -lrx [bottom right longitude] -lry [bottom right longitude] -place [name your region] -disaster [0 or 1] -mul2 [True if you have 8band multispectrum image]
+python main.py -data [your data dir('data')] -ulx [top left longutude] -uly [top left latitude] -lrx [bottom right longitude] -lry [bottom right longitude] -place [name your region] -disaster [0 or 1] -mul2 [True if you have 8band multispectrum image]
 ```
 ```-disaster``` flag is for distinguishing images on before or after disaster if you have both. ```-mul2``` flag is for checking if you have 8band multispectrum image or RGBN multispectrum image.
 

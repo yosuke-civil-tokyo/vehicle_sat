@@ -5,6 +5,9 @@
 ├── [place]
 │   └── satellite
 │       ├── [place]_0
+│       │   ├── raw_img
+│       │   │   ├── ~~~_PAN (WV2/WV3 image folder)
+│       │   │   └── ~~~_MUL (WV2/WV3 image folder)
 │       │   ├── mask1
 │       │   │   ├── pix_to_edge.csv
 │       │   │   ├── mask.tif
@@ -19,8 +22,9 @@
 │       │           ├── [place]_PAN.tif
 │       │           ├── [place]_NIR.tif
 │       │           ├── [place]_MULPAN.tif
-                    └── [place]_NIR2.tif
+│       │           └── [place]_NIR2.tif
 │       └── [place]_1
+│           ├── raw_img
 │           ├── mask1
 │           ├── output1
 │           └── preprocessed

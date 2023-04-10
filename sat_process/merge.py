@@ -1,8 +1,10 @@
 import argparse
 import subprocess
+import os
 from utils import *
 
 parser = argparse.ArgumentParser()
+parser.add_argument('-data', type=str, default='data')
 parser.add_argument('-ulx', type=float, default=139.775)
 parser.add_argument('-uly', type=float, default=35.683333)
 parser.add_argument('-lrx', type=float, default=139.8375)
@@ -15,7 +17,7 @@ region = [args.ulx, args.uly, args.lrx, args.lry]
 place = args.place
 disaster = args.disaster
 
-data_dir = '/data/{}/satellite/{}_{}/'.format(place, place, disaster)
+data_dir = os.path.join(args.data, '{}/satellite/{}_{}/'.format(place, place, disaster))
 data_path = data_dir + 'preprocessed/'
 clip_dir = data_path + '/panmul/clipped/'
 
